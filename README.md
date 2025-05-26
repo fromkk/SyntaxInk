@@ -1,4 +1,4 @@
-# SyntaxInk
+# SyntaxInk🎨
 
 A syntax highlighter for Swift.
 
