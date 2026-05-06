@@ -3,7 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "SyntaxInk",
-    platforms: [.macOS(.v12), .iOS(.v15), .tvOS(.v15), .watchOS(.v8), .visionOS(.v1)],
+    platforms: [.macOS(.v12), .iOS(.v15), .tvOS(.v15), .watchOS(.v8), .visionOS(.v1), .macCatalyst(.v15)],
     products: [
         .library(name: "SwiftSyntaxInk", targets: ["SwiftSyntaxInk"]),
         .library(name: "SyntaxInk", targets: ["SyntaxInk"]),
