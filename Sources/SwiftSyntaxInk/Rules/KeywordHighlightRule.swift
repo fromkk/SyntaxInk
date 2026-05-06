@@ -1,3 +1,4 @@
+#if !targetEnvironment(macCatalyst)
 import Foundation
 import SwiftSyntax
 
@@ -32,3 +33,4 @@ public struct KeywordHighlightRule: SwiftSyntaxHighlightRule {
         }
     }
 }
+#endif

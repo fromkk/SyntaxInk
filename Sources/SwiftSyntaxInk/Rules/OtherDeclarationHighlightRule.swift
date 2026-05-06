@@ -1,3 +1,4 @@
+#if !targetEnvironment(macCatalyst)
 import Foundation
 import SwiftSyntax
 
@@ -64,3 +65,4 @@ public struct OtherDeclarationHighlightRule: SwiftSyntaxHighlightRule {
         }
     }
 }
+#endif

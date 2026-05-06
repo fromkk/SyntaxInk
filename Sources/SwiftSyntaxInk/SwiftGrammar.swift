@@ -1,3 +1,4 @@
+#if !targetEnvironment(macCatalyst)
 import SyntaxInk
 import SwiftSyntax
 import SwiftParser
@@ -27,3 +28,4 @@ private final class TokenCollector: SyntaxVisitor {
         return super.visit(token)
     }
 }
+#endif

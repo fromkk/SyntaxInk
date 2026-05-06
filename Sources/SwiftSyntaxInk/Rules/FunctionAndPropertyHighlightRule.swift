@@ -1,3 +1,4 @@
+#if !targetEnvironment(macCatalyst)
 import Foundation
 import SwiftSyntax
 
@@ -39,3 +40,4 @@ public struct FunctionAndPropertyHighlightRule: SwiftSyntaxHighlightRule {
         return nil
     }
 }
+#endif

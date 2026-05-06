@@ -1,3 +1,4 @@
+#if !targetEnvironment(macCatalyst)
 import Foundation
 import SwiftSyntax
 
@@ -25,3 +26,4 @@ extension SwiftSyntaxHighlightRule {
         return nil
     }
 }
+#endif

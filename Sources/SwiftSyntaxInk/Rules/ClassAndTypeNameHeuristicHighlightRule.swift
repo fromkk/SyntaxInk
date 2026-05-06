@@ -1,3 +1,4 @@
+#if !targetEnvironment(macCatalyst)
 import Foundation
 import SwiftSyntax
 
@@ -28,3 +29,4 @@ extension String {
         return CharacterSet.uppercaseLetters.contains(firstScalar)
     }
 }
+#endif

@@ -1,3 +1,4 @@
+#if !targetEnvironment(macCatalyst)
 import Foundation
 import SyntaxInk
 import SwiftSyntax
@@ -137,3 +138,4 @@ extension SwiftTheme {
         }
     }
 }
+#endif

@@ -16,8 +16,10 @@ let package = Package(
             name: "SwiftSyntaxInk",
             dependencies: [
                 "SyntaxInk",
-                .product(name: "SwiftSyntax", package: "swift-syntax"),
-                .product(name: "SwiftParser", package: "swift-syntax")
+                .product(name: "SwiftSyntax", package: "swift-syntax",
+                         condition: .when(platforms: [.iOS, .macOS, .watchOS, .tvOS, .visionOS])),
+                .product(name: "SwiftParser", package: "swift-syntax",
+                         condition: .when(platforms: [.iOS, .macOS, .watchOS, .tvOS, .visionOS]))
             ]
         ),
         .target(name: "SyntaxInk"),

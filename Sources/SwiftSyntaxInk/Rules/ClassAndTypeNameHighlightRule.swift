@@ -1,3 +1,4 @@
+#if !targetEnvironment(macCatalyst)
 import Foundation
 import SwiftSyntax
 
@@ -14,3 +15,4 @@ public struct ClassAndTypeNameHighlightRule: SwiftSyntaxHighlightRule {
             .applying(configuration.style(for: .otherTypeNames))
     }
 }
+#endif

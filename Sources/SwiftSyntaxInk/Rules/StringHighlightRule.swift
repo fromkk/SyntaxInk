@@ -1,3 +1,4 @@
+#if !targetEnvironment(macCatalyst)
 import Foundation
 import SwiftSyntax
 
@@ -18,3 +19,4 @@ public struct StringHighlightRule: SwiftSyntaxHighlightRule {
         }
     }
 }
+#endif
